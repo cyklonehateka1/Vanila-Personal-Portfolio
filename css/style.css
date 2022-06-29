@@ -61,6 +61,8 @@ nav {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: none;
+  transition: transform 0.4s ease-in-out;
+  z-index: 50;
 }
 
 #close {
@@ -82,7 +84,7 @@ nav {
   background: linear-gradient(to top, #bfdbfe, 70%, white);
 }
 
-.hero-slider-container {
+.hero-container {
   display: flex;
   position: relative;
   align-items: center;
@@ -116,15 +118,19 @@ nav {
   color: blue;
 }
 
-.hero-img-container {
-  position: relative;
-  overflow: hidden;
-  display: flex;
+.slider-parent {
   top: 50px;
   right: px;
   width: 420px;
   height: 500px;
-  background-color: aqua;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
 
 #left-arrow {
@@ -133,6 +139,7 @@ nav {
   left: 50px;
   font-size: 30px;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 #right-arrow {
@@ -141,6 +148,15 @@ nav {
   right: 50px;
   font-size: 30px;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+#right-arrow:hover {
+  opacity: 1;
+}
+
+#left-arrow:hover {
+  opacity: 1;
 }
 
 .hero-img {
@@ -173,74 +189,4 @@ nav {
 
 .hero-text-box p {
   color: rgb(90, 90, 90);
-}
-
-@media (max-width: 1024px) {
-  nav {
-    padding: 10px 20px;
-  }
-  .nav-item {
-    font-size: 15px;
-    margin: 5px;
-  }
-  #moon {
-    margin-top: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  #bars {
-    display: flex;
-    position: relative;
-    top: 10px;
-    font-size: 20px;
-  }
-  .nav-item {
-    display: none;
-  }
-
-  nav {
-    padding: 10px 20px;
-  }
-
-  #moon {
-    display: none;
-  }
-
-  #sun {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  #bars {
-    display: flex;
-    position: relative;
-    top: 10px;
-    font-size: 20px;
-  }
-
-  .nav-left {
-    padding-top: 5px;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  nav {
-    padding: 10px 20px;
-  }
-
-  #moon {
-    display: none;
-  }
-
-  #sun {
-    display: none;
-  }
 }
