@@ -230,7 +230,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 14px;
   font-weight: bold;
-  color: rgb(29, 29, 29);
+  color: #000057;
 }
 
 .about p {
@@ -257,16 +257,28 @@ nav {
   background-color: rgb(1, 94, 94);
 }
 
+/* Services Section */
 .services-section {
   background-color: rgb(219, 234, 254);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .services-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 150px;
-  gap: 10px;
+  padding: 20px 50px;
+  gap: 50px;
+}
+
+.services-section h2 {
+  color: #000057;
+  font-size: 70px;
 }
 
 .service {
@@ -314,6 +326,7 @@ nav {
 .newsletter-cont h2 {
   font-size: 70px;
   margin-bottom: 20px;
+  color: #000057;
 }
 
 .newsletter-cont p {
@@ -354,4 +367,70 @@ nav {
 .footer-cont {
   display: flex;
   flex-direction: column;
+  padding: 50px 70px;
+  background-color: rgb(219, 234, 254);
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-logo-cont h1 {
+  font-size: 43px;
+  color: #000057;
+  margin-bottom: 5px;
+}
+
+.footer-logo-cont p {
+  color: #24292f;
+}
+
+.link-div {
+  align-items: center;
+}
+
+.link-div ul li {
+  list-style: none;
+  padding: 3px 0;
+}
+
+.link-div ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+}
+
+.logos-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.logos {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#github {
+  color: #24292f;
+}
+
+#twitter {
+  color: #1c96e9;
+}
+
+#youtube {
+  color: #f70000;
+}
+
+#facebook {
+  color: #38529a;
+}
+
+#instagram {
+  color: #be309a;
 }
