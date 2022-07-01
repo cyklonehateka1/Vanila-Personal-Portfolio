@@ -243,13 +243,18 @@ nav {
 }
 
 .about a button {
-  background-color: rgb(0, 0, 87);
+  background-color: teal;
   border: none;
   color: white;
   width: 100px;
   height: 35px;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.about a button:hover {
+  background-color: rgb(1, 94, 94);
 }
 
 .services-section {
@@ -291,4 +296,62 @@ nav {
 
 .service span {
   font-size: 20px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: rgb(238, 246, 255);
+}
+
+.newsletter-cont {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newsletter-cont h2 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.newsletter-cont p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.input-cont {
+  width: 50%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+}
+
+.input-cont input {
+  border: none;
+  flex: 8;
+  padding-left: 20px;
+}
+
+.input-cont button {
+  flex: 1;
+  border: none;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+#send-icon {
+  color: white;
+  font-size: 24px;
+}
+
+/* Footer Section */
+.footer-cont {
+  display: flex;
+  flex-direction: column;
 }
