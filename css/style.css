@@ -310,6 +310,41 @@ nav {
   font-size: 20px;
 }
 
+/* Testimononials-section */
+.testimonials-section {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.testimonials-cont {
+  width: 700px;
+  height: 400px;
+  background-color: #c0c0c0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.testimonials-cont h3 {
+  font-size: 25px;
+}
+
+.slider-parent {
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+}
+
+.testimonial-slider {
+  display: flex;
+}
+
 /* Newsletter Section */
 .newsletter-section {
   background-color: rgb(238, 246, 255);
