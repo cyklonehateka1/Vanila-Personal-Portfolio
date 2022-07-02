@@ -2,12 +2,18 @@ const bars = document.querySelector("#bars");
 const menuLinks = document.querySelector(".mobile-div");
 const close = document.querySelector("#close");
 
-// Slider Dom Elements
-const leftArrow = document.querySelector("#left-arrow");
-const rightArrow = document.querySelector("#right-arrow");
+// Herro img Slider Dom Elements
+const leftArrow = document.querySelector("#hero-left-arrow");
+const rightArrow = document.querySelector("#hero-right-arrow");
 const heroImages = document.querySelectorAll(".hero-img");
 const imagesContainer = document.querySelector(".hero-img-container");
 
+// Testimonials Dom elements
+const testLeftArrow = document.querySelector("#test-left-arrow");
+const testRightArrow = document.querySelector("#test-right-arrow");
+const testSlider = document.querySelector(".testimonial-slider");
+
+// Mobile screens navbar toggle
 bars.addEventListener("click", () => {
   menuLinks.style.display = "grid";
   close.addEventListener("click", () => {
