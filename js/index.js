@@ -15,7 +15,7 @@ bars.addEventListener("click", () => {
   });
 });
 
-// slider
+// Hero img slider
 
 let counter = 1;
 
