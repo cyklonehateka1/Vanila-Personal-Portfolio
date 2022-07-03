@@ -11,7 +11,9 @@ const imagesContainer = document.querySelector(".hero-img-container");
 // Testimonials Dom elements
 const testLeftArrow = document.querySelector("#test-left-arrow");
 const testRightArrow = document.querySelector("#test-right-arrow");
-const testSlider = document.querySelector(".testimonial-slider");
+const testSlider = document.querySelectorAll(".testimonial-slider");
+const testSliderParent = document.querySelector(".test-slider-parent");
+const testSliderIndex = document.querySelectorAll(".index");
 
 // Mobile screens navbar toggle
 bars.addEventListener("click", () => {
@@ -54,4 +56,17 @@ imagesContainer.addEventListener("transitioned", () => {
     counter = heroImages.length - counter;
     imagesContainer.style.transform = `translateX(${-size * counter}px)`;
   }
+});
+
+// Testimonials Slider
+let testCounter = 1;
+
+const testSize = testSlider[0].clientWidth;
+
+testSliderParent.style.transform = `translateX(${-testSize}px)`;
+
+testRightArrow.addEventListener("click", () => {
+  testSliderParent.style.transition = "transform 0.8s ease-in-out";
+  testCounter++;
+  testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
 });
