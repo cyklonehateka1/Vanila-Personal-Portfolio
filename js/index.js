@@ -66,7 +66,42 @@ const testSize = testSlider[0].clientWidth;
 testSliderParent.style.transform = `translateX(${-testSize}px)`;
 
 testRightArrow.addEventListener("click", () => {
+  if (testCounter >= testSlider.length - 1) {
+    testRightArrow.addEventListener(
+      "mouseover",
+      () => (testRightArrow.style.opacity = "0.4")
+    );
+    return;
+  }
   testSliderParent.style.transition = "transform 0.8s ease-in-out";
   testCounter++;
   testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
 });
+
+testLeftArrow.addEventListener("click", () => {
+  if (testCounter <= 0) {
+    testLeftArrow.addEventListener(
+      "mouseover",
+      () => (testLeftArrow.style.opacity = "0.4")
+    );
+    return;
+  }
+  testSliderParent.style.transition = "transform 0.8s ease-in-out";
+  testCounter--;
+  testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
+});
+
+// Auto Slide
+const autoSlide = () => {
+  if (testCounter >= testSlider.length - 1) {
+    return;
+  } else {
+    testCounter++;
+    testSliderParent.style.transition = "transform 0.8s ease-in-out";
+    testSliderParent.style.transform = `translateX(${
+      -testSize * testCounter
+    }px)`;
+  }
+};
+
+setTimeout(autoSlide, 5000);
