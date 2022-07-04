@@ -429,7 +429,7 @@ nav {
   gap: 10px;
 }
 
-.active {
+.index.active {
   background-color: #1c96e9;
 }
 
@@ -437,6 +437,7 @@ nav {
   width: 24px;
   height: 7px;
   background-color: #b3d4ff;
+  cursor: pointer;
 }
 
 #test-left-arrow {
