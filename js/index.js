@@ -66,6 +66,7 @@ const testSize = testSlider[0].clientWidth;
 testSliderParent.style.transform = `translateX(${-testSize}px)`;
 
 testRightArrow.addEventListener("click", () => {
+  // let navIndex = 1;
   if (testCounter >= testSlider.length - 1) {
     testRightArrow.addEventListener(
       "mouseover",
@@ -73,6 +74,9 @@ testRightArrow.addEventListener("click", () => {
     );
     return;
   }
+  // testSliderIndex.forEach((nav, i) => {
+  //   nav[]
+  // });
   testSliderParent.style.transition = "transform 0.8s ease-in-out";
   testCounter++;
   testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
@@ -92,16 +96,26 @@ testLeftArrow.addEventListener("click", () => {
 });
 
 // Auto Slide
-const autoSlide = () => {
-  if (testCounter >= testSlider.length - 1) {
-    return;
-  } else {
-    testCounter++;
-    testSliderParent.style.transition = "transform 0.8s ease-in-out";
-    testSliderParent.style.transform = `translateX(${
-      -testSize * testCounter
-    }px)`;
-  }
-};
+// const autoSlide = () => {
+//   let currentTest = document.querySelector(".current");
+//   let i = 1;
+// if (testCounter >= testSlider.length - 1) {
+//   return;
+// } else {
+//   testCounter++;
+//   testSliderParent.style.transition = "transform 0.8s ease-in-out";
+//   testSliderParent.style.transform = `translateX(${
+//     -testSize * testCounter
+//   }px)`;
+// }
+// };
 
-setTimeout(autoSlide, 5000);
+// setTimeout(autoSlide, 5000);
+
+// // Usind The index buttons
+
+// const sliderIndex = () => {
+//   testSliderIndex.forEach((navigation, i) => {});
+// };
+
+// sliderIndex();
