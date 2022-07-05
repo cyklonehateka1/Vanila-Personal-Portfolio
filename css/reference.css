@@ -1,6 +1,6 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
@@ -81,78 +81,6 @@ nav {
 
 #moon {
   color: black;
-}
-
-/* Main Section */
-.main-cont {
-  position: relative;
-  top: 75px;
-  background: radial-gradient(white, aqua);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 50px;
-}
-
-.main-cont h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  /* text-decoration: underline; */
-  text-transform: uppercase;
-  color: #000057;
-  background-color: white;
-  padding: 10px 90px;
-  font-style: italic;
-  border-radius: 10px;
-}
-
-.parent-cont {
-  gap: 70px;
-  display: flex;
-  margin: 20px;
-}
-
-.first-cont {
-  width: 250px;
-  height: 550px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.img-cont img {
-  width: 200px;
-  background-color: rgb(238, 246, 255);
-}
-
-.info {
-  margin: 8px 0;
-}
-
-.info span {
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: capitalize;
-}
-
-.second-cont {
-  background-color: white;
-  width: 600px;
-  padding: 30px;
-  border-radius: 20px;
-}
-
-.boxes {
-  margin: 15px;
-}
-
-.boxes h2 {
-  color: #000057;
-}
-
-.boxes p {
-  font-style: italic;
 }
 
 /* Newsletter Section */
