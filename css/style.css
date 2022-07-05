@@ -5,6 +5,7 @@
   font-family: "Nunito", sans-serif;
 }
 
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -584,5 +585,5 @@ nav {
 }
 
 #instagram {
-  color: #be309a;
+  color: #35be30;
 }
