@@ -78,6 +78,10 @@ nav {
   color: black;
 }
 
+.main-cont {
+  padding-left: 100px;
+}
+
 /* Newsletter Section */
 .newsletter-section {
   background-color: rgb(238, 246, 255);
@@ -200,5 +204,5 @@ nav {
 }
 
 #instagram {
-  color: #fc3939;
+  color: #d80a0a;
 }
