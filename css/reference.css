@@ -83,6 +83,80 @@ nav {
   color: black;
 }
 
+/* Main Section */
+.main-section {
+  background-color: rgb(73, 248, 248);
+  position: relative;
+  top: 73px;
+  padding: 10% 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.referees-cont {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 5px 0;
+  padding: 20px 50px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.img-cont {
+  background-color: rgb(219, 234, 254);
+  border-radius: 6px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 10px;
+}
+
+.img-cont img {
+  width: 200px;
+}
+
+.details-cont {
+  width: 65%;
+  height: 160px;
+  border-left: 1px solid rgb(65, 65, 65);
+  padding-left: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-box {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detail-box span {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 25px;
+}
+
+.detail-box a,
+p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
 /* Newsletter Section */
 .newsletter-section {
   background-color: rgb(238, 246, 255);
