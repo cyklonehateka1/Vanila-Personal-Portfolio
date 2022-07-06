@@ -155,6 +155,10 @@ p {
   text-decoration: none;
   color: black;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 /* Newsletter Section */
