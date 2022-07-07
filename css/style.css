@@ -34,6 +34,11 @@ nav {
   font-size: 20px;
 }
 
+.nav-item a {
+  color: #24292f;
+  text-decoration: none;
+}
+
 #bars {
   display: none;
 }
