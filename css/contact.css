@@ -83,82 +83,94 @@ nav {
   color: black;
 }
 
-/* Main Section */
-.main-section {
-  background-color: #dbeafe;
+/* Form Section */
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   top: 73px;
-  padding: 10% 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 0;
+  background-color: #dbeafe;
 }
 
-.main-cont {
+form {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.referees-cont {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  margin: 5px 0;
-  padding: 20px 50px;
-  align-items: center;
-  border-radius: 6px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.img-cont {
-  background-color: rgb(219, 234, 254);
-  border-radius: 6px;
-  width: 30%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-right: 10px;
-}
-
-.img-cont img {
-  width: 200px;
-}
-
-.details-cont {
-  width: 65%;
-  height: 160px;
-  border-left: 1px solid rgb(65, 65, 65);
-  padding-left: 50px;
-  justify-content: center;
+.form-cont {
   display: flex;
   flex-direction: column;
-}
-
-.detail-box {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
+  /* justify-content: center; */
   align-items: center;
 }
 
-.detail-box span {
-  margin-right: 20px;
+.box,
+.message {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  font-size: 25px;
+  flex-direction: column;
+  margin: 10px 0;
 }
 
-.detail-box a,
-p {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
+.box,
+.message label {
+  font-size: 22px;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+.box input {
+  border: 1px solid rgb(156, 156, 156);
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.box input::placeholder,
+.message textarea::placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.message textarea {
+  width: 400px;
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 131);
+  padding: 10px 20px;
+}
+
+.sub-res {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.submit {
+  height: 40px;
+  width: 190px;
+  background-color: teal;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+}
+
+.reset {
+  height: 40px;
+  width: 190px;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
 }
 
 /* Newsletter Section */
