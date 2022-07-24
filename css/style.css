@@ -79,10 +79,6 @@ nav {
   top: 20px;
 }
 
-#moon {
-  color: black;
-}
-
 /* Hero Section */
 .hero-section {
   height: 100vh;
@@ -128,6 +124,8 @@ nav {
   height: 500px;
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
+  border: 2px solid aqua;
 }
 
 .hero-img-container {
@@ -145,9 +143,9 @@ nav {
 }
 
 #hero-right-arrow {
-  position: absolute;
+  position: relative;
   top: 30px;
-  right: 50px;
+  right: 40px;
   font-size: 30px;
   cursor: pointer;
   opacity: 0.3;
@@ -399,9 +397,9 @@ nav {
 }
 
 .ref-img-container img {
-  width: 130px;
+  width: 110px;
   border: 2px solid rgb(1, 94, 94);
-  border-radius: 50%;
+  border-radius: 5px;
   /* background-color: #1c96e9; */
 }
 
@@ -590,5 +588,5 @@ nav {
 }
 
 #instagram {
-  color: #35be30;
+  color: #ce0101;
 }

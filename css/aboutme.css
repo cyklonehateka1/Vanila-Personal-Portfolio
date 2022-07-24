@@ -87,7 +87,7 @@ nav {
 .main-cont {
   position: relative;
   top: 75px;
-  background: radial-gradient(white, aqua);
+  background: radial-gradient(white, #acd1ff);
   display: flex;
   flex-direction: column;
   align-items: center;

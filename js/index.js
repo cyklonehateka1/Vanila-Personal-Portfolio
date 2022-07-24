@@ -44,20 +44,6 @@ leftArrow.addEventListener("click", () => {
   imagesContainer.style.transform = `translateX(${-size * counter}px)`;
 });
 
-imagesContainer.addEventListener("transitioned", () => {
-  if (heroImages[counter].id === "last-clone") {
-    imagesContainer.style.transition = "none";
-    counter = heroImages.length - 2;
-    imagesContainer.style.transform = `translateX(${-size * counter}px)`;
-  }
-
-  if (heroImages[counter].id === "first-clone") {
-    imagesContainer.style.transition = "none";
-    counter = heroImages.length - counter;
-    imagesContainer.style.transform = `translateX(${-size * counter}px)`;
-  }
-});
-
 // Testimonials Slider
 let testCounter = 1;
 
@@ -66,7 +52,6 @@ const testSize = testSlider[0].clientWidth;
 testSliderParent.style.transform = `translateX(${-testSize}px)`;
 
 testRightArrow.addEventListener("click", () => {
-  // let navIndex = 1;
   if (testCounter >= testSlider.length - 1) {
     testRightArrow.addEventListener(
       "mouseover",
@@ -74,9 +59,6 @@ testRightArrow.addEventListener("click", () => {
     );
     return;
   }
-  // testSliderIndex.forEach((nav, i) => {
-  //   nav[]
-  // });
   testSliderParent.style.transition = "transform 0.8s ease-in-out";
   testCounter++;
   testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
@@ -94,28 +76,3 @@ testLeftArrow.addEventListener("click", () => {
   testCounter--;
   testSliderParent.style.transform = `translateX(${-testSize * testCounter}px)`;
 });
-
-// Auto Slide
-// const autoSlide = () => {
-//   let currentTest = document.querySelector(".current");
-//   let i = 1;
-// if (testCounter >= testSlider.length - 1) {
-//   return;
-// } else {
-//   testCounter++;
-//   testSliderParent.style.transition = "transform 0.8s ease-in-out";
-//   testSliderParent.style.transform = `translateX(${
-//     -testSize * testCounter
-//   }px)`;
-// }
-// };
-
-// setTimeout(autoSlide, 5000);
-
-// // Usind The index buttons
-
-// const sliderIndex = () => {
-//   testSliderIndex.forEach((navigation, i) => {});
-// };
-
-// sliderIndex();
